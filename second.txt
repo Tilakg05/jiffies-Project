@@ -1,0 +1,15 @@
+  
+osc@ubuntu:~/final-src-osc10e/ch2$ sudo insmod seconds.ko
+[sudo] password for osc: 
+osc@ubuntu:~/final-src-osc10e/ch2$ cat /proc/seconds
+kernel: 40 sec
+osc@ubuntu:~/final-src-osc10e/ch2$ cat /proc/seconds
+kernel: 60 sec
+osc@ubuntu:~/final-src-osc10e/ch2$ cat /proc/seconds
+kernel: 73 sec
+osc@ubuntu:~/final-src-osc10e/ch2$ sudo rmmod seconds
+osc@ubuntu:~/final-src-osc10e/ch2$ dmesg
+[ 2639.704860] /proc/seconds created
+[ 2763.435542] /proc/jiffies created
+[ 2865.399950] /proc/jiffies removed
+[ 3011.564984] /proc/seconds removed
