@@ -1,0 +1,7 @@
+osc@ubuntu:~/final-src-osc10e/ch2$ cat /proc/jiffies
+Jiffie: 4295585724
+osc@ubuntu:~/final-src-osc10e/ch2$ sudo rmmod jiffies
+osc@ubuntu:~/final-src-osc10e/ch2$ dmesg
+[ 2639.704860] /proc/seconds created
+[ 2763.435542] /proc/jiffies created
+[ 2865.399950] /proc/jiffies removed
